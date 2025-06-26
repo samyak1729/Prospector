@@ -1,10 +1,8 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
-import { mochaPlugins } from "@getmocha/vite-plugins";
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [...mochaPlugins(process.env), react()],
+  plugins: [react()],
   server: {
     allowedHosts: true,
   },
@@ -12,3 +10,4 @@ export default defineConfig({
     chunkSizeWarningLimit: 5000,
   },
 });
+
