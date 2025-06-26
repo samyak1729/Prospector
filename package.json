@@ -1,11 +1,12 @@
 {
-  "name": "mocha-app",
+  "name": "prospector",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "vite build",
+    "check": "tsc --noEmit",
     "lint": "eslint .",
     "preview": "vite preview"
   },
